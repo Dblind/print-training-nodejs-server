@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Documentation</title>
+</head>
+
+<body>
+  <h2>Documentation</h2>
+  <ul>
+    <li>
+      <div class="endpoint" data-endpoint="endpoint">/users</div>
+      <ul hidden>
+        <li>
+          <div class="endpointSame" data-endpoint="endpoint">/users</div>
+          <section hidden>
+            <p class="descriptionEndpoint">
+              Allow access to array users.
+            </p>
+            <p>
+              <span class="GET">GET</span>: Gets user accounts.
+            </p>
+            <p>
+              <span class="POST">POST</span>: Create new account.
+            </p>
+          </section>
+        </li>
+        <!-- <li>
+          <div class="endpointSame" data-endpoint="endpoint">/users/<span class="params">{login}</span></div>
+          <section hidden >
+            <p class="descriptionEndpoint" >
+              Return user profile with login.
+            </p>
+            <p>
+              <span class="GET">GET</span>: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet asperiores doloremque sit, ipsam tenetur dicta iure vel molestiae facilis quasi nam hic sint harum, temporibus quam odio vero beatae neque.
+            </p>
+          </section>
+        </li> -->
+        <li>
+          <div class="endpointSame" data-endpoint>/users/<span class="params">{id}</span></div>
+          <section hidden>
+            <p class="description">
+              Working with the specific user account.
+            </p>
+            <p>
+              <span class="GET">GET</span>: Gets specific user account.
+            </p>
+            <p>
+              <span class="DELETE">DELETE</span>: Delete account of the user.
+            </p>
+            <p><span>
+                type: number.
+              </span></p>
+          </section>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <div class="endpoint" data-endpoint="endpoint">/users</div>
+      <ul hidden>
+        <li>
+          <div class="endpoint" data-endpoint="endpoint">/users/{:id}</div>
+          <ul hidden>
+            <li>fff</li>
+            <li>fff</li>
+            <li>fff</li>
+          </ul>
+        </li>
+        <li>fff</li>
+        <li>fff</li>
+      </ul>
+    </li>
+    <li>
+      <div class="endpoint" data-endpoint="endpoint">/login</div>
+      <ul hidden>
+        <li>
+          <div class="endpointSame" data-endpoint="endpoint">/login</div>
+          <section hidden>
+            <p class="descriptionEndpoint">
+              Allow authentication user.
+            </p>
+            <p>
+              <span class="POST">POST</span>: Authentication user.
+            </p>
+
+            <div class="paramsValues">
+              <div>
+                Body request:
+                <table>
+                  <thead>
+                    <th>param</th>
+                    <th>value</th>
+                    <th>type</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>login</td>
+                      <td>Account login</td>
+                      <td>string</td>
+                    </tr>
+                    <tr>
+                      <td>password</td>
+                      <td>Account password</td>
+                      <td>string</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                Body response:
+                <table>
+                  <thead>
+                    <th>param</th>
+                    <th>value</th>
+                    <th>type</th>
+                  </thead>
+                  <tbody>
+                    <td>message</td>
+                    <td>response message</td>
+                    <td>string</td>
+                  </tbody>
+                </table>
+                Cookies:
+                <table>
+                  <thead>
+                    <th>param</th>
+                    <th>value</th>
+                    <th>type</th>
+                  </thead>
+                  <tbody>
+                    <td>jwtToken</td>
+                    <td>Jsonwebtoken for authentication</td>
+                    <td>string</td>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </li>
+        <li>fff</li>
+        <li>fff</li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <div id="params">
+    <div class="endpointTitle" data-endpoint="endpoint">/users</div>
+    <div class="opblock">
+      <div class="opblock__endpoint"  data-endpoint="endpoint"><span>GET</span></div>
+      <div class="paramContainer">
+        <div class="tableTitle">
+          <h4>Parameters</h4>
+        </div>
+        <div class="tableContainer">
+          <table class="tableRequest">
+            <thead>
+              <tr>
+                <th class="tableRequest__parametersCol">name</th>
+                <th class="tableRequest__descriptionCol">description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>status</td>
+                <td class="descriptionCol">Lorem ipsum dolor sit amet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tableTitle">
+          <h4>Response</h4>
+        </div>
+
+        <div class="tableContainer">
+          <table class="tableRequest">
+            <thead>
+              <tr>
+                <th class="tableRequest__parametersCol">Code</th>
+                <th class="tableRequest__descriptionCol">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>200</td>
+                <td>
+                  <p>successfull response</p>
+                  <div class="tableRequest__highlightCode">
+                    <pre>
+                      <code>
+      [
+        {
+          "id": <span class="number">0</span>,
+          "category": {
+            "id": <span class="number">0</span>,
+            "name": <span class="string">"string"</span>
+          },
+          "name": "doggie",
+          "photoUrls": [
+            <span class="string">"string"</span>
+          ],
+          "tags": [
+            {
+              "id": <span class="number">0</span>,
+              "name": <span class="string">"string"</span>
+            }
+          ],
+          "status": <span class="string">"available"</span>
+        }
+      ]
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="./js/scripts.js"></script>
+
+</html>

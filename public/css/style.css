@@ -1,0 +1,200 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* table, td, th {
+  border: 1px solid #222;
+  border-collapse: collapse;
+  padding: 3px;
+  margin: 5px;
+  background: #eef;
+} */
+
+ul {
+  /* font-size: 25px; */
+  /* padding-left: 5px; */
+  /* margin: 0; */
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  /* padding: 15px 0; */
+  /* outline: 1px solid olive; */
+}
+
+p {
+  margin: 0;
+}
+
+
+.hide {
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.endpoint {
+  padding: 2px 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #5b5;  
+}
+.endpoint:hover {
+  background: #5c7;
+  /* outline: #272 2px solid; */
+}
+
+.endpointSame {
+  padding: 0 15px;
+  /* margin: 0 15px; */
+  border-radius: 8px;
+  background: #aaa;
+  cursor: pointer;
+}
+.endpointSame:hover {
+  background: #bbc;
+  /* outline: 2px solid #555; */
+}
+li > section {
+  padding-left: 10px;
+  background: #eee;
+}
+
+li.endpoint {
+
+  background: #bbb;
+}
+li::before {
+  color: yellow;
+  background: yellow;
+}
+section{
+  margin-left: 20px;
+}
+section p {
+  border-bottom: 1px solid #666;
+}
+
+.params {
+  color: #a11;
+}
+
+.GET {
+  background: #5b5;
+  padding: 0 5px;
+  /* font-weight: bolder; */
+}
+.DELETE {
+  background: #b55;
+  padding: 0 5px;
+}
+.POST {
+  background: #55e;
+  padding: 0 5px;
+}
+
+.paramsValues {
+  margin-left: 20px;
+}
+.request {
+  margin-left: 20px;
+}
+.response {
+  margin-left: 20px;
+}
+
+.requestParameters {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tableContainer {
+  padding: 20px;
+  background: #def;
+}
+.tableTitle {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 8px 20px;
+}
+
+h4 {
+  padding: 0;
+  margin: 10px 0;
+
+}
+
+
+.endpointTitle {
+  padding: 0 30px;
+  cursor: pointer;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bolder;
+
+  display: flex;
+  align-items: center;
+}
+.endpointTitle:hover {
+  background: #eee;
+}
+.hide {
+  display: none;
+}
+
+.opblock {
+  border: 1px solid #000;
+}
+.opblock__endpoint {
+  outline: 1px solid #000;
+  height: 35px;
+  
+  display: flex;
+  align-items: center;
+}
+.opblock__endpoint span {
+  padding: 5px 10px;
+  background: #5e5;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.paramContainer {
+}
+.tableRequest {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tableRequest__parametersCol {
+  /* outline: 1px solid #a11; */
+  min-width: 6em;
+  font-size: .8em;
+}
+.tableRequest__descriptionCol {
+  /* outline: 1px solid #1a1; */
+  font-size: .8em;
+  width: 99%;
+}
+.tableRequest th, .tableRequest td {
+  text-align: left;
+  padding: 10px 0;
+  vertical-align: top;
+}
+.tableRequest th {
+  border-bottom: 1px solid #aaa;
+}
+.tableRequest__highlightCode {
+  background: #222;
+  color: #eee;
+  border-radius: 4px;
+}
+.tableRequest__highlightCode .number {
+  color: #c55;
+}
+.tableRequest__highlightCode .string {
+  color: #6c6;
+}
